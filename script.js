@@ -38,5 +38,5 @@ function newQuote() {
   document.getElementById("authorDisplay").innerHTML =
     "-- " + arrayOfQuotes[randomNumber].author;
 }
-
+// Button click event
 document.getElementById("newQuote").onclick = newQuote;
