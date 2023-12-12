@@ -57,15 +57,6 @@ var newQuoteBtn = document.getElementById("newQuoteBtn");
 
 // ! [I prefer to use expression functions 😅]
 
-// * function to generate quote
-var generateQuote = function () {
-  var quoteRandom = randomIndex();
-  var quoteShown = quotesArray[quoteRandom];
-  quoteDisplay.innerHTML = quoteShown.quote;
-  authorDisplay.innerHTML = `-- ${quoteShown.author}`;
-  lastIndex = quoteRandom;
-};
-
 // * function to generate random number 
 var randomIndex = function () {
   var newIndex = Math.floor(Math.random() * quotesArray.length);
