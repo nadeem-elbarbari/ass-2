@@ -76,7 +76,7 @@ var randomIndex = function () {
 var generateQuote = function () {
   var quoteRandom = randomIndex();
   var quoteShown = quotesArray[quoteRandom];
-  quoteDisplay.innerHTML = quoteShown.quote;
+  quoteDisplay.innerHTML = `"${quoteShown.quote}"`;
   authorDisplay.innerHTML = `-- ${quoteShown.author}`;
   lastIndex = quoteRandom;
 };
